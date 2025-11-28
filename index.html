@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salah idk | Full Stack Developer</title>
+    
+    <meta name="description" content="Portfolio of Salah idk, a passionate Full Stack Developer specializing in dynamic and user-friendly web applications.">
+    <meta name="keywords" content="Salah idk, Full Stack Developer, Web Developer, Portfolio, JavaScript, React, Node.js, Cybersecurity, Web Design, Freelance Developer">
+    <meta name="author" content="Salah idk">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salahidk.com/">
+    <meta property="og:title" content="Salah idk | Full Stack Developer">
+    <meta property="og:description" content="Portfolio of Salah idk, a passionate Full Stack Developer specializing in dynamic and user-friendly web applications.">
+    <meta property="og:image" content="https://salahidk.com/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salahidk.com/">
+    <meta property="twitter:title" content="Salah idk | Full Stack Developer">
+    <meta property="twitter:description" content="Portfolio of Salah idk, a passionate Full Stack Developer specializing in dynamic and user-friendly web applications.">
+    <meta property="twitter:image" content="https://salahidk.com/assets/logo.png">
+    
+    <link rel="canonical" href="https://salahidk.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Salah idk",
+      "url": "https://salahidk.com",
+      "image": "https://salahidk.com/assets/logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/s-idk/",
+        "https://github.com/salah-eddine-lagrou",
+        "https://www.instagram.com/salah.idk/"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "description": "Full Stack Developer specializing in dynamic and user-friendly web applications and Cybersecurity."
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="assets/logo.png" alt="S-IDK">
+            </a>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="cta-btn" data-i18n="nav.contact">Contact Me</a>
+                
+                <button id="lang-toggle" class="lang-toggle desktop-only" aria-label="Switch Language">
+                    <!-- French Flag (Show when current is English) -->
+                    <svg class="flag-icon flag-fr" viewBox="0 0 640 480" width="24" height="24">
+                        <path fill="#fff" d="M0 0h640v480H0z"/>
+                        <path fill="#002654" d="M0 0h213.3v480H0z"/>
+                        <path fill="#ce1126" d="M426.7 0h213.3v480H426.7z"/>
+                    </svg>
+                    <!-- US Flag (Show when current is French) -->
+                    <svg class="flag-icon flag-us" viewBox="0 0 640 480" width="24" height="24" style="display: none;">
+                        <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                        <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 202.8h640M0 276.5h640M0 350.2h640M0 423.9h640"/>
+                        <path fill="#192f5d" d="M0 0h295.4v258.5H0"/>
+                        <marker id="us-a" markerHeight="30" markerWidth="30">
+                            <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                        </marker>
+                        <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z" transform="scale(.6)"/>
+                        <!-- Simplified stars for performance/size -->
+                        <g fill="#fff" transform="scale(.038)">
+                            <g id="s18">
+                                <g id="s9">
+                                    <g id="s5">
+                                        <g id="s4">
+                                            <path id="s" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/>
+                                            <use href="#s" y="420"/>
+                                            <use href="#s" y="840"/>
+                                            <use href="#s" y="1260"/>
+                                        </g>
+                                        <use href="#s" y="1680"/>
+                                    </g>
+                                    <use href="#s4" x="247" y="210"/>
+                                </g>
+                                <use href="#s9" x="494"/>
+                            </g>
+                            <use href="#s18" x="988"/>
+                            <use href="#s5" x="1976"/>
+                            <use href="#s5" x="2470"/>
+                        </g>
+                    </svg>
+                </button>
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <!-- Sun Icon (for dark mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <!-- Moon Icon (for light mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Container will be inserted here dynamically or statically -->
+            
+            <ul class="nav-links" id="nav-links">
+                <div class="mobile-menu-stars"></div>
+                <button class="menu-close-btn" aria-label="Close Menu">&times;</button>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li class="mobile-only"><a href="#contact" class="cta-btn-mobile" data-i18n="nav.contact">Contact Me</a></li>
+                <li class="mobile-only mobile-social">
+                    <div class="mobile-social-icons">
+                        <a href="https://www.linkedin.com/in/salaheddine-idrissi-kaitouni-b5a8a2251/" target="_blank" aria-label="LinkedIn">
+                            <i class="devicon-linkedin-plain"></i>
+                        </a>
+                        <a href="https://github.com/salah-eddine-lagrou" target="_blank" aria-label="GitHub">
+                            <i class="devicon-github-original"></i>
+                        </a>
+                        <a href="mailto:salaheddine.idrissikaitouni@gmail.com" aria-label="Email">
+                            <i class="devicon-google-plain"></i>
+                        </a>
+                        <a href="https://www.instagram.com/salah_idk_/" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="mobile-only">
+                    <button class="lang-toggle mobile-lang-toggle" aria-label="Switch Language">
+                        <!-- French Flag (Show when current is English) -->
+                        <svg class="flag-icon flag-fr" viewBox="0 0 640 480" width="24" height="24">
+                            <path fill="#fff" d="M0 0h640v480H0z"/>
+                            <path fill="#002654" d="M0 0h213.3v480H0z"/>
+                            <path fill="#ce1126" d="M426.7 0h213.3v480H426.7z"/>
+                        </svg>
+                        <!-- US Flag (Show when current is French) -->
+                        <svg class="flag-icon flag-us" viewBox="0 0 640 480" width="24" height="24" style="display: none;">
+                            <path fill="#bd3d44" d="M0 0h640v480H0"/>
+                            <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 202.8h640M0 276.5h640M0 350.2h640M0 423.9h640"/>
+                            <path fill="#192f5d" d="M0 0h295.4v258.5H0"/>
+                            <marker id="us-a" markerHeight="30" markerWidth="30">
+                                <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z"/>
+                            </marker>
+                            <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z" transform="scale(.6)"/>
+                            <!-- Simplified stars for performance/size -->
+                            <g fill="#fff" transform="scale(.038)">
+                                <g id="s18">
+                                    <g id="s9">
+                                        <g id="s5">
+                                            <g id="s4">
+                                                <path id="s" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/>
+                                                <use href="#s" y="420"/>
+                                                <use href="#s" y="840"/>
+                                                <use href="#s" y="1260"/>
+                                            </g>
+                                            <use href="#s" y="1680"/>
+                                        </g>
+                                        <use href="#s4" x="247" y="210"/>
+                                    </g>
+                                    <use href="#s9" x="494"/>
+                                </g>
+                                <use href="#s18" x="988"/>
+                                <use href="#s5" x="1976"/>
+                                <use href="#s5" x="2470"/>
+                            </g>
+                        </svg>
+                        <span class="lang-text" data-i18n="nav.lang">Language</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-greeting" data-i18n="hero.greeting">Hi! I'm </span>
+                <span class="hero-name">SALAH IDK</span>
+            </h1>
+            <p class="hero-subtitle"><span data-i18n="hero.subtitle">i'm here to make your website</span> <span class="shuffle-text">modern</span></p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-bg-floating">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-react-original"></i>
+            <i class="devicon-nodejs-plain"></i>
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-java-plain"></i>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.p1">
+                        I’m a Full Stack Developer passionate about creating dynamic, responsive, and user-friendly web applications. With experience in both front-end and back-end development, I enjoy transforming ideas into clean, high-performing digital solutions.  
+                    </p>
+                    <p data-i18n="about.p2">Currently preparing for a career in Cybersecurity Engineering, I’m focused on network security, ethical hacking, and threat analysis. I aim to understand how systems work, identify vulnerabilities, and build strong defense strategies to help secure digital environments.
+</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/IMG_2267 (1).png" alt="Salah idk" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="certifications.title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3 data-i18n="certifications.fullstack.title">FullStack Developer</h3>
+                    <p data-i18n="certifications.fullstack.desc">Mastery of frontend & backend technologies.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3 data-i18n="certifications.js.title">JS Certification</h3>
+                    <p data-i18n="certifications.js.desc">Advanced JavaScript concepts & ES6+.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3 data-i18n="certifications.css.title">CSS Certification</h3>
+                    <p data-i18n="certifications.css.desc">Responsive design, Flexbox & Grid.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="devicon-wordpress-plain"></i>
+                    <h3 data-i18n="certifications.wordpress.title">WordPress Certification</h3>
+                    <p data-i18n="certifications.wordpress.desc">Theme development & customization.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="devicon-networkx-plain colored"></i>
+                    <h3 data-i18n="certifications.cyber.title">Cybersecurity Certification</h3>
+                    <p data-i18n="certifications.cyber.desc">Foundations of Cybersecurity Essentials.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services" class="solution-section">
+        <canvas class="canva" id="services-canvas"></canvas>
+        <div class="services-content-wrapper">
+            <h2 class="section-title services-title" data-i18n="services.title">Services</h2>
+            <div class="services-container">
+            <div class="service-card" data-service="web-dev">
+                <h3 data-i18n="services.webdev.title">Web Development</h3>
+                <p data-i18n="services.webdev.desc">Modern, responsive websites tailored to your needs.</p>
+                <button class="service-btn" onclick="openModal('web-dev')" data-i18n="services.more">More</button>
+            </div>
+            <div class="service-card" data-service="branding">
+                <h3 data-i18n="services.branding.title">Branding</h3>
+                <p data-i18n="services.branding.desc">Unique visual identities that leave a lasting impression.</p>
+                <button class="service-btn" onclick="openModal('branding')" data-i18n="services.more">More</button>
+            </div>
+            <div class="service-card" data-service="web-design">
+                <h3 data-i18n="services.webdesign.title">Web Design</h3>
+                <p data-i18n="services.webdesign.desc">Intuitive and beautiful designs for better user experience.</p>
+                <button class="service-btn" onclick="openModal('web-design')" data-i18n="services.more">More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Service Title</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="modal-description">Service Description goes here.</p>
+                <div class="features-container">
+                    <h3 data-i18n="modal.included">What's Included:</h3>
+                    <ul id="modal-features">
+                        <!-- Features will be populated here -->
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="price-tag">
+                    <span data-i18n="modal.starting">Starting at</span>
+                    <h2 id="modal-price">$999</h2>
+                </div>
+                <a href="#contact" class="modal-btn" onclick="closeModal()" data-i18n="modal.getstarted">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+            <div class="projects-layout">
+                <!-- Left Column: Scrolling Text -->
+                <div class="projects-text-list">
+                    <div class="project-item" data-image="assets/project-asendens.jpg">
+                        <h3>Asendens</h3>
+                        <p data-i18n="projects.asendens.desc">Asendens is a French cabinet d'expertise comptable supporting entrepreneurs with accounting, tax, and business management solutions. Their website was built to be responsive, dynamic, and user-friendly, providing clear navigation, service highlights, and an engaging professional design.</p>
+                        <a href="https://www.asendens.fr/" target="_blank" class="project-btn" data-i18n="projects.visit">Visit Website</a>
+                    </div>
+                    <div class="project-item" data-image="assets/project-ekibio.jpg">
+                        <h3>Ekibio</h3>
+                        <p data-i18n="projects.ekibio.desc">Ekibio is a leader in organic food products, committed to sustainability and healthy living. The platform showcases their wide range of brands and commitments to the environment. I developed a clean, nature-inspired interface that highlights their organic values while ensuring a smooth shopping experience.</p>
+                        <a href="https://www.ekibio.fr/" target="_blank" class="project-btn" data-i18n="projects.visit">Visit Website</a>
+                    </div>
+                    <div class="project-item" data-image="assets/project-soinsent.jpg">
+                        <h3>Soinsent</h3>
+                        <p data-i18n="projects.soinsent.desc">Soinsent offers elegance and luxury through its exclusive fragrance collection. The website reflects this sophistication with a minimalist, high-end design, featuring smooth animations and a premium shopping journey that immerses users in the world of luxury scents.</p>
+                        <a href="https://soinsent.com/" target="_blank" class="project-btn" data-i18n="projects.visit">Visit Website</a>
+                    </div>
+                    <div class="project-item" data-image="assets/project-riwaq.jpg">
+                        <h3>Riwaq Trade</h3>
+                        <p data-i18n="projects.riwaq.desc">From Morocco to the World, Riwaq Trade connects international markets with high-quality Moroccan products. The site serves as a B2B portal, emphasizing trust, reliability, and global reach through a professional corporate design and easy-to-navigate catalog.</p>
+                        <a href="https://riwaqtrade.com/" target="_blank" class="project-btn" data-i18n="projects.visit">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Sticky Image -->
+                <div class="projects-visual">
+                    <div class="sticky-image-container">
+                        <!-- Images will be dynamically injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="contact-bg-animated"></div>
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form action="https://formsubmit.co/salahidkco@gmail.com" method="POST" class="contact-form" id="contact-form">
+                        <!-- Hidden fields for FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New Project Inquiry from Portfolio">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project" data-i18n="contact.project">Tell Me About Your Project</label>
+                            <textarea id="project" name="project" rows="6" required placeholder="Describe your project, goals, and timeline..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-i18n="contact.send">Send Message</button>
+                        <div id="form-message"></div>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/s-idk/" target="_blank" aria-label="LinkedIn">
+                                <i class="devicon-linkedin-plain"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+                                <i class="devicon-github-original"></i>
+                            </a>
+                            <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                                <i class="devicon-twitter-original"></i>
+                            </a>
+                            <a href="https://www.instagram.com/salah.idk/" aria-label="Instagram" target="_blank">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-direct">
+                        <p data-i18n="contact.email_text">Or email me directly at:</p>
+                        <a href="mailto:salahidkco@gmail.com" class="email-link">salahidkco@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-brand-text">S-IDK</h2>
+                <p>Seek Improvement, Develop Knowledge</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 data-i18n="footer.quicklinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-i18n="footer.connect">Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/s-idk/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/salah.idk/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Salah IDK. All rights reserved.</p>
+            <p>Built with passion and precision.</p>
+        </div>
+
+    <!-- Sticky Icons -->
+    <a href="https://wa.me/0716812876" target="_blank" class="sticky-icon whatsapp-icon" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <button id="back-to-top" class="sticky-icon back-to-top" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
+    </button>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
